@@ -1,4 +1,4 @@
-"""Reference-versus-subject encoder divergence analysis."""
+"""M1 schemas (re-exported from the module-root ``schema.py``)."""
 
 from __future__ import annotations
 
@@ -11,14 +11,18 @@ for _path in (str(_CV_ASSURE), str(_MODULE_ROOT)):
     if _path not in sys.path:
         sys.path.insert(0, _path)
 
-from dual_encoder import (  # noqa: E402
-    compute_encoder_divergence,
-    extract_dual_embeddings,
-    scan_collusion,
+from schema import (  # noqa: E402
+    CapabilityMatrix,
+    ContributorRollup,
+    FindingType,
+    M1Result,
+    SampleAnomaly,
 )
 
 __all__ = [
-    "compute_encoder_divergence",
-    "extract_dual_embeddings",
-    "scan_collusion",
+    "CapabilityMatrix",
+    "ContributorRollup",
+    "FindingType",
+    "M1Result",
+    "SampleAnomaly",
 ]
